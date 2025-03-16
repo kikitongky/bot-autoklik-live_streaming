@@ -1,51 +1,68 @@
-# Bot Auto Klik TikTok Live
+# Auto Click Bot
 
-## Deskripsi
+Script ini adalah bot auto-clicker sederhana yang digunakan untuk melakukan klik otomatis pada posisi tertentu di layar. Script ini dibuat untuk tujuan **edukasi dan eksperimen** dalam memahami otomatisasi.
 
-Skrip ini digunakan untuk mendapatkan koordinat posisi mouse dan melakukan klik otomatis di TikTok Live.
+## 🚀 Fitur
 
-## Persyaratan
+- Klik otomatis di posisi yang ditentukan
+- Berjalan hingga pengguna menekan **ENTER** untuk berhenti
 
-Sebelum menjalankan skrip, pastikan Anda telah menginstal Python dan modul yang diperlukan.
+## 📌 Persyaratan
 
-### Instalasi Modul
+Pastikan Python sudah terinstal di sistem Anda.
 
-Jalankan perintah berikut di terminal:
+- Python 3.x
+- `pyautogui`
+- `threading` (bawaan Python)
+
+## 🔧 Instalasi
+
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/username/repo-name.git
+   cd repo-name
+   ```
+2. **Buat virtual environment** (opsional, tapi disarankan)
+   ```bash
+   python3 -m venv myenv
+   source myenv/bin/activate  # Linux/macOS
+   myenv\Scripts\activate     # Windows
+   ```
+3. **Install dependensi**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## 🚀 Cara Menjalankan
+
+### **1. Dapatkan Koordinat Klik**
+
+Jalankan script `get_position.py` untuk mengetahui posisi kursor:
 
 ```bash
-pip install pyautogui
+python get_position.py
 ```
 
-## 1. Menjalankan `get_position.py`
+Arahkan kursor ke posisi yang diinginkan, lalu tekan **ENTER** untuk mendapatkan koordinatnya.
 
-Skrip ini digunakan untuk mendapatkan koordinat posisi mouse.
+### **2. Jalankan Auto Clicker**
 
-### Cara Penggunaan:
+```bash
+python auto_klik.py
+```
 
-1. Jalankan skrip dengan perintah:
-   ```bash
-   python get_position.py
-   ```
-2. Arahkan kursor ke posisi yang ingin diklik.
-3. Tekan `Enter`, dan koordinat akan ditampilkan di terminal.
-4. Catat koordinat tersebut untuk digunakan dalam `auto_klik.py`.
+Setelah dijalankan, **buka browser** dan arahkan ke halaman yang ingin diklik.
 
-## 2. Menjalankan `auto_klik.py`
+Tekan **ENTER** untuk menghentikan bot.
 
-Skrip ini digunakan untuk melakukan klik otomatis pada posisi yang telah ditentukan.
+## ⚠ Disclaimer
 
-### Cara Penggunaan:
+Script ini dibuat hanya untuk **tujuan edukasi** dan **eksperimen pribadi**. Penggunaan script ini **sepenuhnya tanggung jawab pengguna**.
 
-1. Edit `auto_klik.py` dan masukkan koordinat yang didapat dari `get_position.py`.
-2. Jalankan skrip dengan perintah:
-   ```bash
-   python auto_klik.py
-   ```
-3. Skrip akan mulai melakukan klik otomatis.
-4. Tekan `Enter` di terminal untuk menghentikan bot.
+Kami **tidak bertanggung jawab** atas penggunaan yang melanggar kebijakan platform tertentu.
 
-## Catatan
+## 📜 Lisensi
 
-- Pastikan TikTok Live sudah terbuka sebelum menjalankan `auto_klik.py`.
-- Jangan gunakan bot ini untuk tujuan yang melanggar kebijakan platform.
-- Jika ingin menyesuaikan kecepatan klik, ubah nilai `time.sleep()` dalam `auto_klik.py`.
+Lisensi MIT - Bebas digunakan, tetapi tanggung jawab sepenuhnya ada pada pengguna.
+
+---
