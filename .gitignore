@@ -1,0 +1,19 @@
+# Python virtual environment
+venv/
+myenv/
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Log files
+*.log
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
